@@ -53,7 +53,7 @@ module.exports = {
         } else {
             await interaction.reply("This feature is only available to verified users, check out " + "<#291337366382051330>" + " to find out how to get verified.");
         }
-
+        console.log("@" + target.user.username + '#' + target.user.discriminator + " used /colour");
     },
 };
 

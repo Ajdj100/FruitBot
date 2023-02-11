@@ -21,5 +21,7 @@ module.exports = {
         interaction.guild.channels.cache.get('392901827211034624').send("Welcome to your new home, <@" + user.id + "> :slight_smile:"); //test channel: 782345191880130634
         
         interaction.reply("Verified <@" + user.id + ">");
+
+        console.log(interaction.member.user.username + '#' + interaction.member.user.discriminator + " used /verify on " + memb.user.username + '#' + memb.user.discriminator)
 	},
 };
