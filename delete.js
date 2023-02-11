@@ -4,7 +4,7 @@ const { clientId, guildId, token } = require('./config.json');
 const rest = new REST({ version: '10' }).setToken(token);
 
 // ...
-const command = '1061788277675401317'; //command ID
+const command = '1061788278111612998'; //command ID
 
 
 //for guild-based commands
