@@ -5,7 +5,7 @@ module.exports = {
 		.setName('verify')
 		.setDescription('Verify a user')
         .setDMPermission(false)
-        .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
+        .setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles)
         .addUserOption(option => option
             .setName('user')
             .setDescription('User to be verified')
@@ -20,6 +20,6 @@ module.exports = {
 
         interaction.guild.channels.cache.get('392901827211034624').send("Welcome to your new home, <@" + user.id + "> :slight_smile:"); //test channel: 782345191880130634
         
-        interaction.reply("Verified " + user.username);
+        interaction.reply("Verified <@" + user.id + ">");
 	},
 };
